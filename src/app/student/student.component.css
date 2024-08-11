@@ -1,0 +1,117 @@
+mat-tab-group{
+    padding-top: 30px;
+}
+
+.example-container {
+    height: 400px;
+    overflow: auto;
+  }
+  
+  table {
+    width: 100%;
+  }
+  .completed-button {
+    background-color: green; /* Change to desired color for completed tasks */
+    color: white; /* Change to desired text color */
+    width: 30%;
+    border-radius: 20px;
+    text-align: center;
+  }
+  
+  .in-progress-button {
+    background-color: orange; /* Change to desired color for in-progress tasks */
+    color: white; /* Change to desired text color */
+    width: 30%;
+    border-radius: 20px;
+    text-align: center;
+  }
+  
+  .not-started-button {
+    background-color: red; /* Change to desired color for not-started tasks */
+    color: white; /* Change to desired text color */
+    width: 30%;
+    border-radius: 20px;
+    text-align: center;
+  }
+  
+  .flex-container {
+    display: flex;
+    width: 100%;
+  }
+  
+  .left-column {
+    flex: 3; /* 60% width */
+    padding: 0px;
+  }
+  
+  .right-column {
+    flex: 2; /* 40% width */
+    padding: 20px;
+  }
+  
+  .container{
+    background-color: #ffffff; /* bg-gray-200 */
+    border-radius: 8px; /* rounded */
+    padding: 30px;
+  }
+  
+  .card {
+    padding: 8px;
+    margin-bottom: 16px;
+    text-decoration: none; /* Remove underline from links */
+    display: block; /* Ensure the link covers the entire card */
+    border-radius: 8px; /* Rounded corners for the card */
+    background-color: #f7fafc3c; /* bg-gray-100 */
+    border: solid 1px;
+    border-color: #aeaeb1;
+    transition: background-color 0.3s; /* Smooth background color change on hover */
+  }
+  
+  .card:hover {
+    background-color: #a7c0d85d; /* Lighter gray on hover */
+  }
+  
+  .icon-card {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 8px; /* rounded */
+  }
+  
+  .icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 16px;
+    color: #6366f1; /* text-indigo-500 */
+  }
+  
+  .title-font {
+    font-weight: 500; /* font-medium */
+  }
+  
+  
+  .right-column {
+    /* Add padding and other styling as needed */
+    padding: 20px;
+  }
+  
+  .container1 {
+    background-color: #f9f9f9; /* Light grey background */
+    padding: 20px;
+    height: 50%;
+    border-radius: 8px;
+  }
+  
+  h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+  
+  .rules-list {
+    margin-bottom: 20px;
+  }
+  
+  .rules-list li {
+    margin-bottom: 10px;
+  }
+  

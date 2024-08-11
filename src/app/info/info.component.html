@@ -1,0 +1,45 @@
+<mat-sidenav-container style="height:100vh">
+    <mat-sidenav class="side-nav" #sidenav mode="side" opened="true" style="width:300px;background-color:#C3D8EB;color:black">
+      <div class="pro-div">
+        <mat-icon class="user-icon" >account_circle</mat-icon> <!-- Updated to use mat-icon -->
+        <div class="user-info">
+          <h4 class="u-name">Student1</h4>
+          <h4 style="margin-top: 0;">7376222IT257</h4>
+        </div>
+      </div>
+      <hr class="horizontal-line">
+      
+      <div class="side-nc" style="font-weight: 400; font-family: 'Times New Roman', Times, serif;">
+        <mat-list class="menu" style="padding-top: 40px;">
+            <div class="menu-item">
+                <a routerLink="/skillchoice">
+                    <mat-icon>person</mat-icon>
+                    <span>Personal Info</span>
+                </a>
+            </div>
+            <div class="menu-item">
+                <a routerLink="/layout">
+                    <mat-icon>build</mat-icon>
+                    <span>Skill Choice</span>
+                </a>
+            </div>
+            <div class="menu-item">
+                <a routerLink="/student">
+                    <mat-icon>assessment</mat-icon>
+                    <span>Evaluation</span>
+                </a>
+            </div>
+        </mat-list>
+    </div>          
+    </mat-sidenav>
+    <mat-sidenav-content>
+      <mat-toolbar class="toolbar"> 
+        <button mat-icon-button (click)="sidenav.toggle()">
+          <mat-icon>menu</mat-icon>
+        </button>
+        <img src="assets/science-svgrepo-com (1).svg" alt="Home Icon" width="20" height="20">
+        <h3 style="font-family: 'Times New Roman', Times, serif;padding-left: 10px;color:#5c5656c4">Skill Portal</h3>
+      </mat-toolbar>
+      <router-outlet></router-outlet>
+    </mat-sidenav-content>
+</mat-sidenav-container>

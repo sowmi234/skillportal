@@ -1,0 +1,234 @@
+*{
+    font-family: 'Times New Roman', Times, serif;
+}
+.testimonial-section {
+    font-family: Arial, sans-serif;
+    padding: 24px 0;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+  
+  .section-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    margin-bottom: 24px;
+  }
+  
+  .testimonial-cards {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .testimonial-card {
+    width: 48%;
+    border-radius: 8px;
+    padding: 6px;
+    margin-bottom: 2px;
+    border: 0px solid #524e4e;
+  }
+  
+  .testimonial-content {
+    display: flex;
+    padding: 5%;
+    font-family: 'Times New Roman', Times, serif;
+    
+  }
+  
+  .testimonial-text {
+    font-size: 16px;
+    color: #5c5656c4;
+    font-weight: bold;
+    margin-bottom: 10px;
+    flex: 1; /* Make paragraphs take up equal width */
+    
+  }
+  .testimonial-text p {
+    margin-bottom: 20px;
+  }
+  .vertical-line {
+    border-left: 3px solid rgba(125, 125, 125, 0.185); /* Adjust thickness and color as needed */
+    margin-left: 50%; /* Adjust distance from text */
+    padding-left: 80px; /* Add padding to maintain distance */
+
+  }
+  
+  .author-details {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5px;
+  }
+  
+  .author-image {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 16px;
+    margin-bottom: 5px;
+  }
+  
+  .author-name {
+    font-size: 18px;
+    padding-left: 22px;
+    font-weight: bold;
+    color: #1c65a9;
+    font-family: Segoe UI, 'Tahoma', Geneva, Verdana, sans-serif;
+  }
+  
+  .author-role {
+    font-size: 14px;
+    color: #666;
+  }
+
+ .testimonial-author {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  } 
+
+.skill{
+    font-size: 18px;
+    font-weight: bold;
+    color: #1c65a9;
+    font-family: Segoe UI, 'Tahoma', Geneva, Verdana, sans-serif;
+}
+
+.day hr{
+    border: 1px solid #8e858557;
+    margin: 20px;
+    margin-top: 10px;
+}
+
+.testimonial-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+    }
+  
+  .user-card {
+    background-color: #f9f9f900;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 120%;
+    display: flex; /* Add display flex */
+  }
+  
+  .user-info {
+    font-size: 16px;
+    color: #625e5e;
+    display: flex; /* Add display flex */
+    flex-direction: column; /* Align items vertically */
+  }
+  
+  .user-info p {
+    margin-bottom: 40px;
+    flex: 1; /* Distribute space equally between paragraphs */
+  }
+
+  .testimonial-content1{
+    padding: 20px;
+  }
+  
+  /*table*/
+  .pricing-section {
+    font-family: Arial, sans-serif;
+    padding: 24px 0;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .pricing-table table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .pricing-table th, .pricing-table td {
+    padding: 10px;
+    border: 1px solid #86afe5;
+  }
+  
+  .pricing-table th {
+    background-color: #edf2f7b4;
+    font-weight: bold;
+  }
+  
+ 
+/*personal info */
+  .student-info-card {
+    background-color: #f9f9f961;
+    border-radius: 8px;
+    padding: 16px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+.student-info {
+    font-size: 16px;
+    color: #938a8a;
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 16px;
+}
+
+.student-info td, .student-info th {
+    border: 0px solid #ddd;
+    padding: 20px;
+}
+
+
+.student-info th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #4CAF50;
+    color: white;
+}
+.student-card {
+  width: 100%;
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.student-card h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.student-detail {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.student-detail .label {
+  font-weight: bold;
+  color: #555;
+}
+
+.student-detail .value {
+  color: #777;
+}
+.testimonial-card1{
+  width: 48%;
+  padding: 6px;
+  
+}
+.pricing-section{
+  background-color: #afcce59f;
+  margin-bottom: 2px;
+  border: 1px solid #524e4e5c;
+  border-radius: 8px;
+}

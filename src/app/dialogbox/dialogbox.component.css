@@ -1,0 +1,37 @@
+
+.dialog-title {
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: #333;
+  text-align: center; /* Center the title */
+}
+
+.instructions-title {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #666;
+}
+
+.instructions-list {
+  list-style-type: decimal; /* Ensure ordered list uses numbers */
+  padding-left: 20px; /* Add some left padding to the list */
+  color: #444;
+}
+
+.instructions-list li {
+  margin-bottom: 8px; /* Add space between list items */
+}
+
+.submit-button {
+  background-color: #a9b1e2; /* Material Design primary color */
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 4px;
+  margin: 10px auto; /* Center the button horizontally */
+  display: block; /* Ensure button takes up block-level space */
+  text-transform: uppercase; /* Make text uppercase for a consistent look */
+}
+
+.submit-button:hover {
+  background-color: #303f9f; /* Darker shade for hover state */
+}

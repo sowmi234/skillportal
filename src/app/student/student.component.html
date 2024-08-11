@@ -1,0 +1,146 @@
+<mat-tab-group>
+  <mat-tab label="ATTENDANCE">
+    <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+
+      <!-- S.No Column -->
+      <ng-container matColumnDef="sno">
+        <th mat-header-cell *matHeaderCellDef> S.No </th>
+        <td mat-cell *matCellDef="let student; let i = index"> {{i + 1}} </td>
+      </ng-container>
+
+      <!-- Day Column -->
+      <ng-container matColumnDef="day">
+        <th mat-header-cell *matHeaderCellDef> Day </th>
+        <td mat-cell *matCellDef="let student"> {{student.day}} </td>
+      </ng-container>
+
+      <!-- Skill Name Column -->
+      <ng-container matColumnDef="skillName">
+        <th mat-header-cell *matHeaderCellDef> Skill Name </th>
+        <td mat-cell *matCellDef="let student"> {{student.skillName}} </td>
+      </ng-container>
+
+      <!-- Task Completion Column -->
+      <ng-container matColumnDef="taskCompletion">
+        <th mat-header-cell *matHeaderCellDef> Task Completion </th>
+        <td mat-cell *matCellDef="let student">
+          <button mat-raised-button [ngClass]="getStatusButtonClass(student.taskCompletion)"
+            (click)="toggleStatus(student)">
+            {{ getButtonText(student.taskCompletion) }}
+          </button>
+        </td>
+      </ng-container>
+
+      <!-- Attendance Column -->
+      <ng-container matColumnDef="attendance">
+        <th mat-header-cell *matHeaderCellDef> Attendance </th>
+        <td mat-cell *matCellDef="let student"> {{student.attendance}} </td>
+      </ng-container>
+
+      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+    </table>
+  </mat-tab>
+  <mat-tab label="LIST OF TASKS">
+    <div class="flex-container">
+      <!-- Left Column (60%) -->
+      <section class="left-column">
+        <div class="container">
+          <h1 style="font-size: 20px;padding-bottom: 10px;">Tasks</h1>
+          <a href="/taskform" class="card">
+            <div class="icon-card">
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+                class="icon" viewBox="0 0 24 24">
+                <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+                <path d="M22 4L12 14.01l-3-3"></path>
+              </svg>
+              <span class="title-font font-medium">Authentic Cliche Forage</span>
+            </div>
+          </a>
+          <a href="/taskform" class="card">
+            <div class="icon-card">
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+                class="icon" viewBox="0 0 24 24">
+                <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+                <path d="M22 4L12 14.01l-3-3"></path>
+              </svg>
+              <span class="title-font font-medium">Kinfolk Chips Snackwave</span>
+            </div>
+          </a>
+          <!-- Add more cards as needed -->
+          <a href="/taskform" class="card">
+            <div class="icon-card">
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+                class="icon" viewBox="0 0 24 24">
+                <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+                <path d="M22 4L12 14.01l-3-3"></path>
+              </svg>
+              <span class="title-font font-medium">Kinfolk Chips Snackwave</span>
+            </div>
+          </a>
+          <a href="/taskform" class="card">
+            <div class="icon-card">
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+                class="icon" viewBox="0 0 24 24">
+                <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+                <path d="M22 4L12 14.01l-3-3"></path>
+              </svg>
+              <span class="title-font font-medium">Kinfolk Chips Snackwave</span>
+            </div>
+          </a>
+          <a href="/taskform" class="card">
+            <div class="icon-card">
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+                class="icon" viewBox="0 0 24 24">
+                <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+                <path d="M22 4L12 14.01l-3-3"></path>
+              </svg>
+              <span class="title-font font-medium">Kinfolk Chips Snackwave</span>
+            </div>
+          </a>
+          <a href="/taskform" class="card">
+            <div class="icon-card">
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+                class="icon" viewBox="0 0 24 24">
+                <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+                <path d="M22 4L12 14.01l-3-3"></path>
+              </svg>
+              <span class="title-font font-medium">Kinfolk Chips Snackwave</span>
+            </div>
+          </a>
+          <a href="/taskform" class="card">
+            <div class="icon-card">
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+                class="icon" viewBox="0 0 24 24">
+                <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+                <path d="M22 4L12 14.01l-3-3"></path>
+              </svg>
+              <span class="title-font font-medium">Kinfolk Chips Snackwave</span>
+            </div>
+          </a>
+        </div>
+      </section>
+
+      <!-- Right Column (40%) -->
+      <section class="right-column">
+        <div class="container1">
+          <div class="card1">
+            <h2>Rules</h2>
+            <ul class="rules-list">
+              <li><b>Rule 1:</b> Submit tasks on or before the due date to avoid penalties.</li>
+              <li><b>Rule 2:</b> All submissions must be in PDF format unless specified otherwise.</li>
+              <li><b>Rule 3:</b> Ensure your name and student ID are included on the first page of the document.</li>
+              <li><b>Rule 4:</b> Plagiarism is strictly prohibited. Use proper citations and references.</li>
+              <li><b>Rule 5:</b> Incomplete tasks will not be accepted. Ensure all parts of the task are completed.</li>
+              <li><b>Rule 6:</b> Late submissions may result in a grade reduction unless prior approval is obtained.</li>
+              <li><b>Rule 7:</b> Tasks must be submitted through the designated submission portal.</li>
+              <li><b>Rule 8:</b> Contact the instructor immediately if you encounter any issues with submission.</li> 
+            </ul>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </mat-tab>
+  <mat-tab label="Third"> Content 3 </mat-tab>
+</mat-tab-group>

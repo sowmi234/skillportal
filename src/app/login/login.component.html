@@ -1,0 +1,28 @@
+<div class="page-container">
+    <div class="container">
+        <div class="content">
+            <div class="logo-and-title">
+                <img src="assets/science-svgrepo-com (2).svg" alt="Home Icon" width="30" height="30">
+                <h1 class="title" style="font-size:40px; text-align: center;color: rgb(18, 19, 19);">Skill Portal</h1>
+            </div>
+            <h3 style="font-size: 18px;padding-left: 30px;color: rgb(96, 149, 228);">Welcome Back!!</h3>
+            <div class="welcome">
+                <img src="assets/8449749_3902636.svg" alt="image" height="500px" width="500px">
+            </div>
+        </div>
+        <div class="signup-form">
+            <h2>Login</h2>
+            <div class="input-field">
+                <label for="username">Username</label>
+                <input type="text" id="username" [(ngModel)]="loginObj.EmailId" required name="username">
+            </div>
+            <div class="input-field">
+                <label for="password">Password</label>
+                <input type="password" id="password" [(ngModel)]="loginObj.Password" required name="password">
+            </div>
+            <button><a routerLink="/info" (click)="onLogin()">Login</a></button>
+            <p class="note" style="font-size: 12px;color: rgba(103, 107, 110, 0.799);">Login with your Bitsathy mail id.</p>
+        </div>
+    </div>
+</div>
+<router-outlet></router-outlet>

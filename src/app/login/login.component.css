@@ -1,0 +1,100 @@
+*{
+    font-family: 'Times New Roman', Times, 'serif';
+    
+}
+
+.page-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Set height to viewport height */
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #c3d8eb;
+    width: 900px; /* Set fixed width */
+    height: 500px; /* Set fixed height */
+    border: 1px solid #a7a2a2; /* Add border */
+    border-radius: 20px;
+}
+
+.content,
+.signup-form {
+    width: calc(50% - 2px); /* Set both to 50% of the container width minus the gap */
+    padding: 20px;
+}
+
+.content {
+    text-align: center;
+    color: #1c1b1bcc;
+    
+}
+
+.logo-and-title {
+    display: flex;
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Align items vertically */
+    margin-top: 20px; /* Add margin bottom */
+}
+
+.logo-and-title img {
+    margin-right: 10px; /* Add margin between logo and title */
+}
+
+.signup-form {
+    background-color: #f9f9f94e;
+    padding: 50px;
+    border-radius: 10px;
+    height: 400px ;/* Set height to fill remaining space */
+    width:400px;
+    margin-left: 2px; /* Adjust margin left to create a 2px gap */
+
+}
+
+
+.signup-form h2 {
+    color: #222020c3;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    
+}
+
+.input-field {
+    margin-bottom: 20px;
+}
+
+.input-field label {
+    color: #1d1c1cae;
+    font-size: 14px;
+}
+
+.input-field input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #c3d8eb;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #050505;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #c3d8eb;
+    color: #050505;
+}
+
+.note {
+    color: #6d6767;
+    font-size: 12px;
+    margin-top: 20px;
+}
